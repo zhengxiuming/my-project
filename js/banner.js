@@ -1,4 +1,4 @@
-window.onload=function(){
+$(function(){
     //购物车效果
     var $topBarCart = $(".topBar .topBar-cart");
     var $cartMini = $("#cart-mini");
@@ -350,7 +350,7 @@ window.onload=function(){
         var curT = utils.win("scrollTop");
         var cliH = utils.win("clientHeight");
         gotopArrow.style.display = curT >= cliH ? "block" : "none";
-    };
-};
+    }
+});
 
 
